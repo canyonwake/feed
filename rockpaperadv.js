@@ -38,7 +38,7 @@ function playGame(playerMove) {
     document.querySelector('.js-moves').innerHTML 
     
     = `You
-  <img src="${playerMove}.png"
+  <img src="images/${playerMove}.png"
   class="move-icon">
   Computer
   <img src="images/${computerMove}.png"
