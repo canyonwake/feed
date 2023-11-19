@@ -1,0 +1,160 @@
+<!DOCTYPE html> <!--Tells browser to use most current version of html-->
+<!--Extention to add to VS Code Live Server to allow auto refresh of pages-->
+
+<html>
+  <head>
+    <title>Rock Scissors Adv</title> <!--This sets the title in the tab-->
+    <!--This would set all buttons as Red-->
+    
+    <link rel="stylesheet" href="rockpaperadv.css">
+
+    <style>
+
+/*
+      body {
+        background-color: black;
+        color: white;
+        font-family: Arial;
+      }
+
+      .title {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .move-icon {
+        height: 50px;
+      }
+
+      .move-button {
+        background-color: transparent;
+        border: 4px solid white;
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+
+      .result {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 50px;
+      }
+*/
+     
+    </style>
+
+  </head>
+
+  <body> <!--HTML Examples-->
+    <p class="title">Rock Paper Scissors</p>
+
+    <button 
+    onclick="
+      playGame('Rock');
+    " class="move-button">
+      <img src="images/rock.png" 
+      class="move-icon">
+    </button>
+
+    <button 
+    onclick="
+      playGame('Paper');
+    " class="move-button">
+      <img src="images/paper.png" 
+      class="move-icon">
+    </button> 
+ 
+    <button 
+    onclick="
+      playGame('Scissors');
+    " class="move-button">
+      <img src="images/scissors.png" 
+      class="move-icon">
+    </button> 
+  
+  <p class="js-result result">You Win!</p>
+
+  <p class="js-moves"></p>
+  
+  <p class="js-score"></p>
+
+  
+  <script src="rockpaperadv.js">
+    /*
+    function playGame(playerMove) {
+      const computerMove = pickComputerMove();
+        
+      console.log(computerMove);
+
+      
+      let result = '';
+
+      if (playerMove === 'Scissors') {
+      if (computerMove === 'Rock') {
+            result = 'You Lose';
+        } else if (computerMove === 'Paper') {
+            result = 'You Win';
+        } else if (computerMove === 'Scissors') {
+            result = 'Tie';
+        } 
+
+    } else if (playerMove === 'Paper') {
+            if (computerMove === 'Rock') {
+        result = 'You Win';
+      } else if (computerMove === 'Paper') {
+        result = 'Tie';
+      } else if (computerMove === 'Scissors') {
+        result = 'You Lose';
+      }
+
+    } else if (playerMove === 'Rock') {
+        if (computerMove === 'Rock') {
+        result = 'Tie';
+      } else if (computerMove === 'Paper') {
+        result = 'You Lose';
+      } else if (computerMove === 'Scissors') {
+        result = 'You Win';
+      }
+    }
+     
+      document.querySelector('.js-result').innerHTML = result;
+      document.querySelector('.js-moves').innerHTML 
+      
+      = `You
+    <img src="images/${playerMove}.png"
+    class="move-icon">
+    Computer
+    <img src="images/${computerMove}.png"
+    class="move-icon">`;
+      
+      //= `You ${playerMove} - Computer ${computerMove}`;
+    
+
+       // alert(`You picked ${playerMove}, Computer picked ${computerMove} ${result}`);
+    
+    }
+    
+  
+    function pickComputerMove() {
+      const randomNumber = Math.random();
+      
+      let computerMove = '';
+
+      if (randomNumber >= 0 && randomNumber < 1 / 3) {
+        computerMove = 'Rock';
+      } else if (randomNumber >= 1 / 3 && randomNumber < 2/3) {
+        computerMove = 'Paper';
+      } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+        computerMove = 'Scissors';
+      }        
+      return computerMove;
+    }
+
+    */
+  </script>
+    
+  </body>
+
+</html>
